@@ -1,0 +1,408 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 995500,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1995100,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user enters valid username and password",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enters_valid_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user navigates Online Banking - Pay Bills Page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsStepDefs.the_user_navigates_Online_Banking_Pay_Bills_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-06T19:38:59.452Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1996000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Add a new payee",
+        "description": "",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user accesses the Add New Payee tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AddNewPayeeStepDefs.the_user_accesses_the_Add_New_Payee_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "creates new payee using following information",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Details",
+                  "XYZ account"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "add new payee under pay bills",
+    "description": "",
+    "id": "add-new-payee-under-pay-bills",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddNewPayee.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 995600,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.the_user_accesses_the_Find_Transactions_tab()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-06T19:38:59.634Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "4- Type",
+        "description": "",
+        "id": "find-transactions-in-account-activity;4--type",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2992800,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.clicks_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "results table should show \"at least one\" result under \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"at least one\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.resultsTableShouldShowResultUnder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "results table should show \"at least one\" result under \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"at least one\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.resultsTableShouldShowResultUnder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "user selects type \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.userSelectsType(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.clicks_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996300,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "results table should show \"at least one\" result under \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"at least one\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.resultsTableShouldShowResultUnder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998200,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "results table should show \"no\" result under \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"no\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.resultsTableShouldShowResultUnder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "user selects type \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.userSelectsType(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.clicks_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "results table should show \"at least one\" result under \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"at least one\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.resultsTableShouldShowResultUnder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "results table should show \"no\" result under \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"no\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsStepDefs.resultsTableShouldShowResultUnder(java.lang.String,java.lang.String)"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Find Transactions in Account Activity",
+    "description": "",
+    "id": "find-transactions-in-account-activity",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "tags": []
+  }
+]
